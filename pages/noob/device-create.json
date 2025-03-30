@@ -24,7 +24,7 @@
     },
     {
       "type": "button",
-      "label": "选择连接ID",
+      "label": "选择通道ID",
       "action": {
         "type": "dialog",
         "app": "noob",
@@ -67,7 +67,7 @@
     },
     {
       "key": "link_id",
-      "label": "连接ID",
+      "label": "通道ID",
       "type": "text"
     },
     {

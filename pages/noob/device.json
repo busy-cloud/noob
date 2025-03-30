@@ -85,7 +85,7 @@
     },
     {
       "key": "link_id",
-      "label": "连接ID"
+      "label": "通道ID"
     },
     {
       "key": "name",
