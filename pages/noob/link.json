@@ -1,0 +1,108 @@
+{
+  "title": "连接",
+  "template": "table",
+  "toolbar": [
+    {
+      "label": "创建",
+      "icon": "plus",
+      "type": "button",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "link-create",
+        "params_func": "return {noob_id: this.params.noob_id}"
+      }
+    },
+    {
+      "key": "keyword",
+      "type": "text",
+      "placeholder": "请输入关键字"
+    },
+    {
+      "type": "button",
+      "icon": "search",
+      "label": "搜索",
+      "action": {
+        "type": "script",
+        "script": "this.keyword=this.toolbar.value.keyword; this.search()"
+      }
+    }
+  ],
+  "keywords": [
+    "id",
+    "name"
+  ],
+  "operators": [
+    {
+      "icon": "eye",
+      "action": {
+        "type": "page",
+        "app": "iot",
+        "page": "link-detail",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "icon": "edit",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "link-edit",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "icon": "delete",
+      "title": "删除",
+      "confirm": "确认删除？",
+      "action": {
+        "type": "script",
+        "script": "this.request.get('noob/link/'+data.id+'/delete').subscribe(res=>{this.refresh()})"
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "id",
+      "label": "ID",
+      "action": {
+        "type": "page",
+        "app": "iot",
+        "page": "link-detail",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "key": "name",
+      "label": "名称"
+    },
+    {
+      "key": "type",
+      "label": "类型"
+    },
+    {
+      "key": "address",
+      "label": "地址"
+    },
+    {
+      "key": "port",
+      "label": "端口"
+    },
+    {
+      "key": "protocol",
+      "label": "协议"
+    },
+    {
+      "key": "disabled",
+      "label": "禁用",
+      "type": "boolean"
+    },
+    {
+      "key": "created",
+      "label": "日期",
+      "type": "date"
+    }
+  ],
+  "search_api": "noob/link/search",
+  "mount": "if(this.params.noob_id)this.filter.noob_id=this.params.noob_id;"
+}

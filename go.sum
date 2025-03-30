@@ -8,10 +8,10 @@ github.com/PaesslerAG/jsonpath v0.1.0 h1:gADYeifvlqK3R3i2cR5B4DGgxLXIPb3TRTH1mGi
 github.com/PaesslerAG/jsonpath v0.1.0/go.mod h1:4BzmtoM/PI8fPO4aQGIusjGxGir2BzcV0grWtFzq1Y8=
 github.com/busy-cloud/boat v0.2.14 h1:wXN3acMHc/WsJWmz7ackQPEHTwZWoOaPICz//idWZHo=
 github.com/busy-cloud/boat v0.2.14/go.mod h1:rl15bgj9JKV/fQKUi+OxHRlMf36lDc62WG9AF9rhFvs=
-github.com/busy-cloud/iot v0.2.8 h1:EGajEeTwFuGtBDLaqLneeLbYRM2JJ6uUja/twBe5amM=
-github.com/busy-cloud/iot v0.2.8/go.mod h1:8/m5MW/J+3eVH1tUvMvc3zVlIWFqq69nP6qWCsg6CEI=
-github.com/busy-cloud/modbus v0.2.6 h1:9bPCkz+V38ZF2RxTgfLWWMIEV6cue9mUvNSder0ml0Q=
-github.com/busy-cloud/modbus v0.2.6/go.mod h1:ORDUdPyh9TjH29vcPe6OBacqvBD0ZBky7h5H0mU9y8U=
+github.com/busy-cloud/iot v0.2.9 h1:vlbF4m4jCdbdrpgROVsBCjv13bm/wRnoFncFy0c3nZY=
+github.com/busy-cloud/iot v0.2.9/go.mod h1:i+xiVY1OCUkFPOxL+yng/zi2IFrTfqs4xVM64knTkJc=
+github.com/busy-cloud/modbus v0.2.9 h1:c/st7fHESFB46GHtZnZK6f/yXSbfMUgcTepRMJ16eWA=
+github.com/busy-cloud/modbus v0.2.9/go.mod h1:P8tkQnlON54Gdqttf+9kK1XM94pjui0HWqt6b2xLKuE=
 github.com/bytedance/sonic v1.13.2 h1:8/H1FempDZqC4VqjptGo14QQlJx8VdZJegxs6wwfqpQ=
 github.com/bytedance/sonic v1.13.2/go.mod h1:o68xyaF9u2gvVBuGHPlUVCy+ZfmNNO5ETf1+KgkJhz4=
 github.com/bytedance/sonic/loader v0.1.1/go.mod h1:ncP89zfokxS5LZrJxl5z0UJcsk4M4yY2JpfqGeCtNLU=

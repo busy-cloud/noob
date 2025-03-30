@@ -4,8 +4,8 @@ go 1.23.0
 
 require (
 	github.com/busy-cloud/boat v0.2.14
-	github.com/busy-cloud/iot v0.2.8
-	github.com/busy-cloud/modbus v0.2.6
+	github.com/busy-cloud/iot v0.2.9
+	github.com/busy-cloud/modbus v0.2.9
 	github.com/gin-gonic/gin v1.10.0
 	github.com/spf13/viper v1.20.1
 )

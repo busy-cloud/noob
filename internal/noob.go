@@ -11,15 +11,15 @@ func init() {
 }
 
 type Noob struct {
-	Id       string        `json:"id,omitempty" xorm:"pk"`
-	Name     string        `json:"name,omitempty"`
-	Bsp      string        `json:"bsp,omitempty"`
-	Firmware string        `json:"firmware,omitempty"`
-	Imei     string        `json:"imei,omitempty"`
-	Iccid    string        `json:"iccid,omitempty"`
-	Imsi     string        `json:"imsi,omitempty"`
-	Disabled bool          `json:"disabled,omitempty"`                        //禁用
-	Created  time.Duration `json:"created,omitempty,omitzero" xorm:"created"` //创建时间
+	Id       string    `json:"id,omitempty" xorm:"pk"`
+	Name     string    `json:"name,omitempty"`
+	Bsp      string    `json:"bsp,omitempty"`
+	Firmware string    `json:"firmware,omitempty"`
+	Imei     string    `json:"imei,omitempty"`
+	Iccid    string    `json:"iccid,omitempty"`
+	Imsi     string    `json:"imsi,omitempty"`
+	Disabled bool      `json:"disabled,omitempty"`                        //禁用
+	Created  time.Time `json:"created,omitempty,omitzero" xorm:"created"` //创建时间
 }
 
 type NoobLink struct {
@@ -36,7 +36,7 @@ type NoobLink struct {
 	Protocol        string         `json:"protocol,omitempty"`                        //通讯协议
 	ProtocolOptions map[string]any `json:"protocol_options,omitempty" xorm:"json"`    //通讯协议参数
 	Disabled        bool           `json:"disabled,omitempty"`                        //禁用
-	Created         time.Duration  `json:"created,omitempty,omitzero" xorm:"created"` //创建时间
+	Created         time.Time      `json:"created,omitempty,omitzero" xorm:"created"` //创建时间
 }
 
 type Device struct {

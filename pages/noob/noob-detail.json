@@ -62,16 +62,14 @@
   "load_api": "noob/noob/:id",
   "children": [
     {
-      "content": {
-        "title": "连接列表",
-        "template": "table"
-      }
+      "app": "noob",
+      "page": "link",
+      "params_func": "return {noob_id: params.id}"
     },
     {
-      "content": {
-        "title": "设备列表",
-        "template": "table"
-      }
+      "app": "noob",
+      "page": "device",
+      "params_func": "return {noob_id: params.id}"
     }
   ]
 }

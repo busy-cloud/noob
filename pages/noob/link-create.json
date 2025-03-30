@@ -1,0 +1,156 @@
+{
+  "title": "创建连接",
+  "template": "form",
+  "toolbar": [
+    {
+      "type": "button",
+      "label": "选择小白ID",
+      "action": {
+        "type": "dialog",
+        "app": "noob",
+        "page": "noob-choose",
+        "after_close": "this.editor.patchValue({noob_id: result.id})"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "key": "id",
+      "label": "ID",
+      "type": "text",
+      "placeholder": "默认随机ID"
+    },
+    {
+      "key": "name",
+      "label": "名称",
+      "type": "text"
+    },
+    {
+      "key": "noob_id",
+      "label": "小白ID",
+      "type": "text"
+    },
+    {
+      "key": "type",
+      "label": "类型",
+      "type": "radio",
+      "options": [
+        {
+          "value": "serial",
+          "label": "串口"
+        },
+        {
+          "value": "tcp-client",
+          "label": "TCP客户端"
+        }
+      ]
+    },
+    {
+      "key": "address",
+      "label": "地址",
+      "type": "text",
+      "condition": {
+        "key": "type",
+        "type": "in",
+        "value": [
+          "tcp-client"
+        ]
+      }
+    },
+    {
+      "key": "port",
+      "label": "端口",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "baud_rate",
+      "label": "波特率",
+      "type": "number",
+      "default": 9600,
+      "condition": {
+        "key": "type",
+        "type": "==",
+        "value": "serial"
+      }
+    },
+    {
+      "key": "data_bits",
+      "label": "字长",
+      "type": "number",
+      "default": 8,
+      "condition": {
+        "key": "type",
+        "type": "==",
+        "value": "serial"
+      }
+    },
+    {
+      "key": "stop_bits",
+      "label": "结束符",
+      "type": "radio",
+      "options": [
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        }
+      ],
+      "condition": {
+        "key": "type",
+        "type": "==",
+        "value": "serial"
+      }
+    },
+    {
+      "key": "parity",
+      "label": "检验模式",
+      "type": "radio",
+      "options": [
+        {
+          "value": "N",
+          "label": "None"
+        },
+        {
+          "value": "O",
+          "label": "Odd"
+        },
+        {
+          "value": "E",
+          "label": "Even"
+        }
+      ],
+      "condition": {
+        "key": "type",
+        "type": "==",
+        "value": "serial"
+      }
+    },
+    {
+      "key": "protocol",
+      "label": "协议",
+      "type": "select",
+      "options": [],
+      "change_action": {
+        "type": "script",
+        "script": "setTimeout(()=>this.load_protocol_option(), 200)"
+      }
+    },
+    {
+      "key": "protocol_options",
+      "label": "协议参数",
+      "type": "object",
+      "children": []
+    }
+  ],
+  "submit_api": "noob/link/create",
+  "submit_success": "this.navigate('/page/noob/noob-detail?id='+data.noob_id)",
+  "mount": "this.data.noob_id=this.params.noob_id; this.load_protocols();",
+  "methods": {
+    "load_protocols": "this.request.get('iot/protocol/list').subscribe(res=>{this.content.fields[10].options=res.data.map(d=>{return {value:d.name,label:d.description}}); setTimeout(()=>this.load_protocol_option(), 200);  })",
+    "load_protocol_option": "this.editor.value.protocol && this.request.get('iot/protocol/'+this.editor.value.protocol+'/option').subscribe(res=>{this.content.fields[11].children=res.data.fields; setTimeout(()=>this.editor.rebuild(), 200)})"
+  }
+}
