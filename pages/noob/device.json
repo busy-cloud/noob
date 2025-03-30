@@ -85,13 +85,7 @@
     },
     {
       "key": "link_id",
-      "label": "连接ID",
-      "action": {
-        "type": "page",
-        "app": "noob",
-        "page": "link-detail",
-        "params_func": "return {id: data.link_id}"
-      }
+      "label": "连接ID"
     },
     {
       "key": "name",

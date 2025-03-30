@@ -34,15 +34,6 @@
   ],
   "operators": [
     {
-      "icon": "eye",
-      "action": {
-        "type": "page",
-        "app": "iot",
-        "page": "link-detail",
-        "params_func": "return {id: data.id}"
-      }
-    },
-    {
       "icon": "edit",
       "action": {
         "type": "page",
@@ -64,13 +55,7 @@
   "columns": [
     {
       "key": "id",
-      "label": "ID",
-      "action": {
-        "type": "page",
-        "app": "iot",
-        "page": "link-detail",
-        "params_func": "return {id: data.id}"
-      }
+      "label": "ID"
     },
     {
       "key": "name",
