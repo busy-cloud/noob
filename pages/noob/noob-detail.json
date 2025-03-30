@@ -22,6 +22,15 @@
         "type": "script",
         "script": "this.request.get('noob/noob/'+data.id+'/delete').subscribe(res=>{this.navigate('/page/noob/noob')})"
       }
+    },
+    {
+      "icon": "sync",
+      "type": "button",
+      "label": "同步",
+      "action": {
+        "type": "script",
+        "script": "this.request.get('noob/noob/'+data.id+'/sync').subscribe(res=>{})"
+      }
     }
   ],
   "items": [
