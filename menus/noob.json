@@ -1,0 +1,15 @@
+{
+  "name": "物联小白",
+  "icon": "link",
+  "index": 200,
+  "items": [
+    {
+      "name": "连接器",
+      "url": "page/noob/noob"
+    },
+    {
+      "name": "地图",
+      "url": "page/noob/map"
+    }
+  ]
+}

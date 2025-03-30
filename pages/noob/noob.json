@@ -1,0 +1,99 @@
+{
+  "title": "物联小白",
+  "template": "table",
+  "toolbar": [
+    {
+      "label": "创建",
+      "icon": "plus",
+      "type": "button",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "noob-create"
+      }
+    },
+    {
+      "key": "keyword",
+      "type": "text",
+      "placeholder": "请输入关键字"
+    },
+    {
+      "type": "button",
+      "icon": "search",
+      "label": "搜索",
+      "action": {
+        "type": "script",
+        "script": "this.keyword=this.toolbar.value.keyword; this.search()"
+      }
+    }
+  ],
+  "keywords": [
+    "id",
+    "name",
+    "imei",
+    "iccid"
+  ],
+  "operators": [
+    {
+      "icon": "eye",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "noob-detail",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "icon": "edit",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "noob-edit",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "icon": "delete",
+      "title": "删除",
+      "confirm": "确认删除？",
+      "action": {
+        "type": "script",
+        "script": "this.request.get('noob/noob/'+data.id+'/delete').subscribe(res=>{this.refresh()})"
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "id",
+      "label": "ID",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "noob-detail",
+        "params_func": "return {id: data.id}"
+      }
+    },
+    {
+      "key": "name",
+      "label": "名称"
+    },
+    {
+      "key": "imei",
+      "label": "IMEI"
+    },
+    {
+      "key": "iccid",
+      "label": "ICCID"
+    },
+    {
+      "key": "disabled",
+      "label": "禁用"
+    },
+    {
+      "key": "created",
+      "label": "日期",
+      "type": "date"
+    }
+  ],
+  "search_api": "noob/noob/search"
+}

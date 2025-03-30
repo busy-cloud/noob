@@ -1,0 +1,26 @@
+{
+  "title": "编辑小白",
+  "template": "form",
+  "fields": [
+    {
+      "key": "id",
+      "label": "ID",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "name",
+      "label": "名称",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "disabled",
+      "label": "禁用",
+      "type": "switch"
+    }
+  ],
+  "load_api": "noob/noob/:id",
+  "submit_api": "noob/noob/:id",
+  "submit_success": "this.navigate('/page/noob/noob-detail?id='+data.id)"
+}
