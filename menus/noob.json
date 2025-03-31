@@ -1,15 +1,19 @@
 {
   "name": "物联小白",
-  "icon": "link",
-  "index": 200,
+  "icon": "wifi",
+  "index": 400,
   "items": [
     {
-      "name": "小白",
+      "name": "物联小白",
       "url": "page/noob/noob"
     },
     {
-      "name": "地图",
+      "name": "地图分布",
       "url": "page/noob/map"
+    },
+    {
+      "name": "OTA升级",
+      "url": "page/noob/ota"
     }
   ]
 }
