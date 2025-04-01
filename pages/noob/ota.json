@@ -56,7 +56,7 @@
       "confirm": "确认删除？",
       "action": {
         "type": "script",
-        "script": "this.request.get('noob/ota/'+data.id+'/delete').subscribe(res=>{this.refresh()})"
+        "script": "this.request.get('noob/ota/'+data.id+'/delete').subscribe(res=>{this.load()})"
       }
     }
   ],
