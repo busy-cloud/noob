@@ -2,7 +2,7 @@ package internal
 
 import (
 	"github.com/busy-cloud/boat/db"
-	"github.com/busy-cloud/iot/device"
+	"github.com/god-jason/iot-master/device"
 	"time"
 )
 
