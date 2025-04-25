@@ -1,0 +1,37 @@
+{
+  "title": "服务器",
+  "template": "form",
+  "fields": [
+    {
+      "key": "id",
+      "label": "ID",
+      "type": "text",
+      "placeholder": "默认IMEI号"
+    },
+    {
+      "key": "host",
+      "label": "服务器",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "port",
+      "label": "端口",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "key",
+      "label": "秘钥",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "disabled",
+      "label": "禁用",
+      "type": "switch"
+    }
+  ],
+  "submit_api": "noob/noob/:id",
+  "submit_success": "this.navigate('/page/noob/noob-detail?id='+data.id)"
+}

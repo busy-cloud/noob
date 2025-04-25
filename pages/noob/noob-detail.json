@@ -31,6 +31,17 @@
         "type": "script",
         "script": "this.request.get('noob/noob/'+data.id+'/sync').subscribe(res=>{})"
       }
+    },
+    {
+      "icon": "database",
+      "type": "button",
+      "label": "服务器",
+      "action": {
+        "type": "page",
+        "app": "noob",
+        "page": "server",
+        "params_func": "return {id: data.id}"
+      }
     }
   ],
   "items": [

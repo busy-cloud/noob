@@ -9,7 +9,7 @@ import (
 	"github.com/busy-cloud/boat/page"
 	"github.com/busy-cloud/boat/web"
 	_ "github.com/busy-cloud/noob/internal"
-	_ "github.com/god-jason/iot-master"
+	//_ "github.com/god-jason/iot-master"
 	"github.com/spf13/viper"
 	"os"
 	"os/signal"
