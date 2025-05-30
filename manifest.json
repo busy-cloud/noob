@@ -1,0 +1,28 @@
+{
+  "id": "noob",
+  "name": "物联小白",
+  "description": "物联小白管理后台",
+  "version": "v0.0.1",
+  "menus": [
+    {
+      "name": "物联小白",
+      "icon": "wifi",
+      "index": 400,
+      "items": [
+        {
+          "name": "物联小白",
+          "url": "page/noob/noob"
+        },
+        {
+          "name": "地图分布",
+          "url": "page/noob/map"
+        },
+        {
+          "name": "OTA升级",
+          "url": "page/noob/ota"
+        }
+      ]
+    }
+  ],
+  "pages": "pages"
+}

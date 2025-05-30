@@ -9,7 +9,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "device-create",
+        "page": "noob/device-create",
         "params_func": "return {noob_id: this.params.noob_id, link_id: this.params.link_id}"
       }
     },
@@ -39,7 +39,7 @@
       "action": {
         "type": "page",
         "app": "iot",
-        "page": "device-detail",
+        "page": "iot/device-detail",
         "params_func": "return {id: data.id}"
       }
     },
@@ -48,7 +48,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "device-edit",
+        "page": "noob/device-edit",
         "params_func": "return {id: data.id}"
       }
     },
@@ -69,7 +69,7 @@
       "action": {
         "type": "page",
         "app": "iot",
-        "page": "device-detail",
+        "page": "iot/device-detail",
         "params_func": "return {id: data.id}"
       }
     },
@@ -79,7 +79,7 @@
       "action": {
         "type": "page",
         "app": "iot",
-        "page": "product-detail",
+        "page": "iot/product-detail",
         "params_func": "return {id: data.product_id}"
       }
     },

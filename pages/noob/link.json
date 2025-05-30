@@ -9,7 +9,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "link-create",
+        "page": "noob/link-create",
         "params_func": "return {noob_id: this.params.noob_id}"
       }
     },
@@ -38,7 +38,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "link-edit",
+        "page": "noob/link-edit",
         "params_func": "return {id: data.id}"
       }
     },

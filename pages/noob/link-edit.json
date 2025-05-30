@@ -8,7 +8,7 @@
       "action": {
         "type": "dialog",
         "app": "noob",
-        "page": "noob-choose",
+        "page": "noob/noob-choose",
         "after_close": "this.editor.patchValue({noob_id: result.id})"
       }
     }

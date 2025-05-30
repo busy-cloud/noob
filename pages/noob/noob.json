@@ -9,7 +9,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "noob-create"
+        "page": "noob/noob-create"
       }
     },
     {
@@ -39,7 +39,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "noob-detail",
+        "page": "noob/noob-detail",
         "params_func": "return {id: data.id}"
       }
     },
@@ -48,7 +48,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "noob-edit",
+        "page": "noob/noob-edit",
         "params_func": "return {id: data.id}"
       }
     },
@@ -69,7 +69,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "noob-detail",
+        "page": "noob/noob-detail",
         "params_func": "return {id: data.id}"
       }
     },

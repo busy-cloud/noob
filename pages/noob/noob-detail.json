@@ -9,7 +9,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "noob-edit",
+        "page": "noob/noob-edit",
         "params_func": "return {id: data.id}"
       }
     },
@@ -39,7 +39,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "server",
+        "page": "noob/server",
         "params_func": "return {id: data.id}"
       }
     }
@@ -83,12 +83,12 @@
   "children": [
     {
       "app": "noob",
-      "page": "link",
+      "page": "noob/link",
       "params_func": "return {noob_id: params.id}"
     },
     {
       "app": "noob",
-      "page": "device",
+      "page": "noob/device",
       "params_func": "return {noob_id: params.id}"
     }
   ]

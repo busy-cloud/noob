@@ -9,7 +9,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "ota-create"
+        "page": "noob/ota-create"
       }
     },
     {
@@ -37,7 +37,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "ota-detail",
+        "page": "noob/ota-detail",
         "params_func": "return {id: data.id}"
       }
     },
@@ -46,7 +46,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "ota-edit",
+        "page": "noob/ota-edit",
         "params_func": "return {id: data.id}"
       }
     },
@@ -67,7 +67,7 @@
       "action": {
         "type": "page",
         "app": "noob",
-        "page": "ota-detail",
+        "page": "noob/ota-detail",
         "params_func": "return {id: data.id}"
       }
     },
