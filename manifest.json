@@ -14,7 +14,7 @@
   "menus": [
     {
       "name": "物联小白",
-      "nz-icon": "wifi",
+      "nz_icon": "wifi",
       "index": 400,
       "items": [
         {
