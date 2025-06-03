@@ -3,7 +3,7 @@ module github.com/busy-cloud/noob
 go 1.23.0
 
 require (
-	github.com/busy-cloud/boat v0.4.10
+	github.com/busy-cloud/boat v0.4.13
 	github.com/gin-gonic/gin v1.10.1
 	github.com/god-jason/iot-master v0.0.2
 	github.com/spf13/viper v1.20.1
