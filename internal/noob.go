@@ -42,5 +42,5 @@ type NoobLink struct {
 type Device struct {
 	device.Device `xorm:"extends"`
 	NoobId        string `json:"noob_id,omitempty" xorm:"index"`
-	LinkId        string `json:"link_id,omitempty" xorm:"index"`
+	//LinkId        string `json:"link_id,omitempty" xorm:"index"`
 }
